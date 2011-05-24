@@ -7,9 +7,9 @@ You can see DotD in action (and maybe win a cool prize!) at http://dealoftheday.
 # Setup and Installation #
 
 - Download the DotD files
-- Create the required certificates 
+- Create the required certificates and place them in the "Worker" folder 
 	+ Certificates are required to use the Windows Azure Service Management API
-	+ For information on creating certificates see the �Create the certificate for the Windows Azure Service Management API� section in part II of the Windows Azure PHP Scaling series: http://azurephp.interoperabilitybridges.com/articles/scaling-php-applications-on-windows-azure-part-ii-role-management
+	+ For information on creating certificates see the "Create the certificate for the Windows Azure Service Management API" section in part II of the Windows Azure PHP Scaling series: http://azurephp.interoperabilitybridges.com/articles/scaling-php-applications-on-windows-azure-part-ii-role-management
 - Enter your Windows Azure hosted service and storage credentials into the config.php file
 	+ NOTE: There is a config.php file in both "Web" and "Worker" folders
 - Build the package
