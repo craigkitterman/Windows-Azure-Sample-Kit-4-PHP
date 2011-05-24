@@ -17,6 +17,7 @@ You can see DotD in action (and maybe win a cool prize!) at http://dealoftheday.
 - Edit the ServiceConfiguration.cscfg file the commandline tool created (Will be located in the output folder from the tool) with your WindowsAzureStorageConnectionString value
 	+ If you have not done this before see the Windows Azure PHP Scaling series for more information: http://azurephp.interoperabilitybridges.com/articles
 - Deploy the .cspkg and .cscfg files through the Windows Azure Portal
+- Run http://your.domain/setup.php to initialize the Windows Azure storage account
 
 # Additional Information #
 Additional information and documentation can be found at
