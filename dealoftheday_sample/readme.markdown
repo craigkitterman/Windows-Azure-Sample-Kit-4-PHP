@@ -44,6 +44,11 @@ You can see DotD in action (and maybe win a cool prize!) at http://dealoftheday.
 	+ CERT corresponds to the filename of the .pem certificate you created. Be sure you use the full path to your certificate file. If your .pem is fabrikam.pem you can use \__DIR\__ . 'fabrikam.pem'
 - Build the package
 	+ If you have never built a Windows Azure PHP package before see this article: http://azurephp.interoperabilitybridges.com/articles/deploying-your-first-php-application-with-the-windows-azure-command-line-tools-for-php
+	+ The following was used to build this package during development
+		* php.exe package.php  --source="%PROJ%\Web" --project="%PROJNAME%" --runDevFabric -f --target="%PROJ%\deploy" --worker-role-startup-script="worker.php" --worker-role="%PROJ%\Worker"
+	+ Be sure you replace the variables with your locations:
+		* %PROJ% - Location of your project. E.G. C:\Projects\fabrikam
+		* %PROJNAME% - The name of your project. E.G. FabrikamCustomerPortal
 - Edit the ServiceConfiguration.cscfg file the commandline tool created (Will be located in the output folder from the tool) with your WindowsAzureStorageConnectionString value
 	+ If you have not done this before see the Windows Azure PHP Scaling series for more information: http://azurephp.interoperabilitybridges.com/articles
 - Create a new Hosted Service and deploy the .cspkg and .cscfg files through the Windows Azure Portal
