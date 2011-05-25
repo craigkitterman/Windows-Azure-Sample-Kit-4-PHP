@@ -45,7 +45,7 @@ You can see DotD in action (and maybe win a cool prize!) at http://dealoftheday.
 - Build the package
 	+ If you have never built a Windows Azure PHP package before see this article: http://azurephp.interoperabilitybridges.com/articles/deploying-your-first-php-application-with-the-windows-azure-command-line-tools-for-php
 	+ The following was used to build this package during development
-		* php.exe package.php  --source="%PROJ%\Web" --project="%PROJNAME%" --runDevFabric -f --target="%PROJ%\deploy" --worker-role-startup-script="worker.php" --worker-role="%PROJ%\Worker"
+		* php.exe package.php  --source="%PROJ%\Web" --project="%PROJNAME%" -f --target="%PROJ%\deploy" --worker-role-startup-script="worker.php" --worker-role="%PROJ%\Worker"
 	+ Be sure you replace the variables with your locations:
 		* %PROJ% - Location of your project. E.G. C:\Projects\fabrikam
 		* %PROJNAME% - The name of your project. E.G. FabrikamCustomerPortal
