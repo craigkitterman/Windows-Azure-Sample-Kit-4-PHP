@@ -27,7 +27,7 @@
 	<div class="banner_area">
 		<div class="banner_header"></div>
 		<div class="banner_text">This game is sample application for PHP developers to learn how to take advantage of Windows Azure scalability. Test your luck for the chance to win a variety of fun prizes. Enter the captcha code and click play when the game is in progress. Good luck!</div>
-		<div class="link_game"><a href="rules.php" class="link_text">Game Eligibility and Rules</a></div><span style="clear:both"></span>	
+		<div class="link_game"><a href="rules.php" class="link_text">Game Eligibility and Rules</a> (US Only)</div><span style="clear:both"></span>	
 		<a class="MS_icon link_text" target="_blank" href="http://www.microsoft.com/"></a><span style="clear:both"></span>
 		<a class="Azure_icon link_text" target="_blank" href="http://www.microsoft.com/en-us/cloud/developer/default.aspx?lang=php&fbid=pjFutejxInd"></a><span style="clear:both"></span>
 		<a class="PHP_icon link_text" target="_blank" href="http://www.php.net/"></a><span style="clear:both"></span>
