@@ -34,7 +34,7 @@ if((!isset($_POST['recaptcha_challenge_field']) || !isset($_POST['recaptcha_resp
     if($_POST['recaptcha_response_field'] != 'petersradtester') {
           // captcha set. verify it
           require_once('lib/recaptchalib.php');
-          $privatekey = "6LcuI8QSAAAAAHTFdhnw3zjFJXbkqiBP0nDcJaij ";
+          $privatekey = "YOURCODE ";
           $resp = recaptcha_check_answer ($privatekey,
                                         $_SERVER["REMOTE_ADDR"],
                                         $_POST["recaptcha_challenge_field"],

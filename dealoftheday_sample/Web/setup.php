@@ -27,3 +27,18 @@
 
 require_once('include.php');
 require_once('storage_integrity_check.php');
+
+if(isset($_POST['Pause'])) {
+    pause_site();
+}
+
+if(isset($_POST['Resume'])) {
+    resume_site();
+}
+
+?>
+<p>Your storage has been initialized and is ready to use</p>
+<form action="" method="post">
+    <input type="submit" name="Pause" value="Pause Site"/> <input type="submit" name="Resume" value="Resume Site"/>
+</form>
+<br/><br/><p><strong>Having this file public is dangerous! When you no longer need it please remove it from your deployment.</strong></p>

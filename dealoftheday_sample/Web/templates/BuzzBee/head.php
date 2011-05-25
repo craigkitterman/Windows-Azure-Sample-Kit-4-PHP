@@ -1,27 +1,3 @@
-<?php
-/**
- *    Copyright 2011 Microsoft Corporation
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- * 
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- * 
- * @category  Microsoft
- * @package   DealOfTheDay
- * @author    BuzzBee
- * @link http://www.buzzbee.biz/
- * @copyright 2011 Copyright Microsoft Corporation. All Rights Reserved
- * @license   http://www.apache.org/licenses/LICENSE-2.0
- **/
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -50,8 +26,8 @@
 	<div class="top_spacer"></div>
 	<div class="banner_area">
 		<div class="banner_header"></div>
-		<div class="banner_text">Test your luck for the chance to win a variety of fun prizes. Winners are picked at random and you can play as many times as you like to increase your odds. All you have to do is enter the captcha code and click play when the game is in progress. Good luck!</div>
-		<div class="link_game"><a href="#" class="link_text">Game Eligibility and Rules</a></div><span style="clear:both"></span>	
+		<div class="banner_text">This game is sample application for PHP developers to learn how to take advantage of Windows Azure scalability. Test your luck for the chance to win a variety of fun prizes. Enter the captcha code and click play when the game is in progress. Good luck!</div>
+		<div class="link_game"><a href="rules.php" class="link_text">Game Eligibility and Rules</a></div><span style="clear:both"></span>	
 		<a class="MS_icon link_text" target="_blank" href="http://www.microsoft.com/"></a><span style="clear:both"></span>
 		<a class="Azure_icon link_text" target="_blank" href="http://www.microsoft.com/en-us/cloud/developer/default.aspx?lang=php&fbid=pjFutejxInd"></a><span style="clear:both"></span>
 		<a class="PHP_icon link_text" target="_blank" href="http://www.php.net/"></a><span style="clear:both"></span>

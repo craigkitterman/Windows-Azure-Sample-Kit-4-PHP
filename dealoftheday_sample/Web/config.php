@@ -28,9 +28,9 @@
  * the website, EG: storage settings, table, blob, etc
  */
  define('PRODUCTION_SITE', true);
- define('AZURE_STORAGE_KEY', '');
- define('AZURE_SERVICE', '');
- define('AZURE_ROLE_END', '');
- define('SUB_ID', '');
- define('CERT_KEY', '');
- define('CERT', '');
+ define('AZURE_STORAGE_KEY', ''); // Storage Primary Key
+ define('AZURE_SERVICE', ''); // Storage Endpoint
+ define('AZURE_ROLE_END', ''); // Web Endpoint
+ define('SUB_ID', ''); // Service subscription id
+ define('CERT_KEY', ''); // Certificate key (thumbprint)
+ define('CERT', ''); // Full location of certificate file

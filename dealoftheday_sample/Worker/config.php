@@ -28,9 +28,20 @@
  * the website, EG: storage settings, table, blob, etc
  */
  define('PRODUCTION_SITE', true);
- define('AZURE_STORAGE_KEY', '');
- define('AZURE_SERVICE', '');
- define('AZURE_ROLE_END', '');
- define('SUB_ID', '');
- define('CERT_KEY', '');
- define('CERT', '');
+ define('AZURE_STORAGE_KEY', ''); // Storage Primary Key
+ define('AZURE_SERVICE', ''); // Storage Endpoint
+ define('AZURE_ROLE_END', ''); // Web Endpoint
+ define('SUB_ID', ''); // Service subscription id
+ define('CERT_KEY', ''); // Certificate key (thumbprint)
+ define('CERT', ''); // Full location of certificate file
+ 
+define('MIN_WEBROLES', 5); // Minimum web role instances to run at all times
+define('MAX_WEBROLES', 20); // Max web roles to run at all time. You MUST limit the max to prevent economic denial attacks
+ 
+ 
+define('PROD_START_HOUR', 8); // Hour to unpause game
+define('PROD_END_HOUR', 13); // Hour to pause game
+
+define('PERF_IN_SEC', 30); // How many seconds to check performance
+
+define('LOOP_PAUSE', 10); // How long should the worker pause between loops

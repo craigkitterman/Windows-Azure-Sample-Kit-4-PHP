@@ -55,6 +55,15 @@ You can see DotD in action (and maybe win a cool prize!) at http://dealoftheday.
 	+ If you have not done this before see the article http://azurephp.interoperabilitybridges.com/articles/deploying-your-first-php-application-with-the-windows-azure-command-line-tools-for-php
 - Run http://yourHostedServiceEndpoint.cloudapp.net/setup.php to initialize the Windows Azure storage account
 
+# Captcha #
+DotD uses the reCaptcha service. Here are the steps you need to implement your own Captcha with reCaptcha
+
+- Create a reCaptcha account and generate the keys
+- Edit templates/BuzzBee/BuzzBee.php and replace all instances of YOURCODE with the public key
+- Edit getcode.php and replace all instances of YOURCODE with the private key
+
+http://recaptcha.net 
+
 # Additional Information #
 Additional information and documentation can be found at
 

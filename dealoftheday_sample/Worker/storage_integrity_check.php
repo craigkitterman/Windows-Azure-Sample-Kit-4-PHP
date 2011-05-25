@@ -20,9 +20,8 @@
  * @copyright 2011 Copyright Microsoft Corporation. All Rights Reserved
  * @license   http://www.apache.org/licenses/LICENSE-2.0
  **/
-// This file must be called from include.php for it to function properly
+// This file must be called after include.php for it to function properly
 
-$logger->Log('Storage Integrity Check', 'Start', LOG_DEBUG);
 
 $timer->mark('storage_existance');
 // Ensure all our tables exist
@@ -124,4 +123,3 @@ try {
 } catch (Exception $e) { /* don't really care. we got what we needed */ }
 
 $timer->mark('stop_integrity_check');
-$logger->Log('Storage Integrity Check', 'Stop', LOG_DEBUG);

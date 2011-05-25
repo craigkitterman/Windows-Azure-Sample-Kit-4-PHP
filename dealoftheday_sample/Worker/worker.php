@@ -20,7 +20,7 @@
  * @copyright 2011 Copyright Microsoft Corporation. All Rights Reserved
  * @license   http://www.apache.org/licenses/LICENSE-2.0
  **/
-define('LOOP_PAUSE', 10); // in seconds
+
 
 
 //set error handler
@@ -204,16 +204,6 @@ while(true) {
 
 
 
-
-//error handler function
-function customError($errno, $errstr) {
- /*   global $logger;
-    $logger->Log('Worker Error', $errno . ' ---- ' . $errstr, LOG_ERR);
-    $logger->Submit();*/
-}
-
-
-
 /**
  * Adds a new comment to the comment table
  * 
@@ -223,21 +213,16 @@ function customError($errno, $errstr) {
  * @param String $details 
  */
 function new_comment($details) { 
-    global $queue, $table, $logger;
+    global $queue, $table;
     $details = unserialize($details);
    
-    $logger->Log('New Comment', 'Comment from ' . $details->Name, LOG_INFO);
     echo "\n- Inserting new comment";
     
     $c = new Comment($details->getRowKey());
     $c->setPartitionKey($details->getPartitionKey());
     $c->Name = $details->Name;
     $c->Text = $details->Text;
-   // var_dump($details); var_dump($c);
-//echo 'actual worker';
     $table->insertEntity('Comment', $c);
-    
-    
 }
 
 /**
@@ -249,10 +234,9 @@ function new_comment($details) {
  * @param String $details 
  */
 function delete_comment($details) {
-     global $table,$logger,$queue;
+     global $table,$queue;
     $details = unserialize($details);
 
-    $logger->Log('Deleted Comment', 'Removed', LOG_INFO);
     echo "\n- Removing a comment";
     $c = $table->retrieveEntityById('Comment', $details['PartitionKey'], $details['RowKey']);
 
@@ -267,10 +251,9 @@ function delete_comment($details) {
  * @param String $details
  */
 function delete_product($details) {
-    global $table,$logger,$queue;
+    global $table,$queue;
     $details = unserialize($details);
  
-    $logger->Log('Deleted Product', 'Deleted ' . $details->Title, LOG_INFO);
     echo "\n- Deleting product: " . $details->Title;
     $table->deleteEntity('Product', $details);
     
@@ -299,7 +282,7 @@ function delete_product($details) {
  * @param String $details - Serialized object
  */
 function new_product($details) {
-    global $table, $logger;
+    global $table;
     $details = unserialize($details);
     
     // Add product to product table
@@ -312,7 +295,6 @@ function new_product($details) {
     $p->Image = $details->Image; 
     $p->ValidDays = $details->ValidDays;
     $table->insertEntity('Product', $p);  
-    $logger->Log('New Product', 'Added ' . $p->Title, LOG_INFO);
     echo "\n- Added product: " . $p->Title;
     // Add product to code queue
     fill_new_product_queue($p);
@@ -329,7 +311,7 @@ function new_product($details) {
  * @param Product $p 
  */
 function fill_new_product_queue($p) { 
-    global $queue,$logger,$table, $timer;
+    global $queue,$table, $timer;
 
     $i = $p->NumProducts;
     $times = array(); // holds the times codes have been created for
@@ -434,5 +416,4 @@ function generate_code($start, $end) {
                 $md5e = md5($end);
                 
                 return md5($md5a . $md5e);
-
 }
