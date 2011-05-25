@@ -64,6 +64,11 @@ DotD uses the reCaptcha service. Here are the steps you need to implement your o
 
 http://recaptcha.net 
 
+# Managing Products #
+DotD provides a management interface for adding products. To access it go to http://yourHostedServiceEndpoint.cloudapp.net/admin
+
+Default password is 'Abc.123'. There is not currently a way to change the password through the UI. Please update it with your favorite Windows Azure storage tool
+
 # Additional Information #
 Additional information and documentation can be found at
 
