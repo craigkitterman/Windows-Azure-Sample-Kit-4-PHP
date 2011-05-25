@@ -41,7 +41,7 @@ You can see DotD in action (and maybe win a cool prize!) at http://dealoftheday.
 	+ AZURE_ROLE_END corresponds to the custom URL of your hosted service. You may not have a hosted service yet. It is ok to leave this field blank
 	+ SUB_ID corresponds to the subscription id you found while creating your certificate files
 	+ CERT_KEY corresponds to the certificate key (thumbprint) you found while creating your certificate files
-	+ CERT corresponds to the filename of the .pem certificate you created. Be sure you use the full path to your certificate file. If your .pem is fabrikam.pem you can use __DIR__ . 'fabrikam.pem'
+	+ CERT corresponds to the filename of the .pem certificate you created. Be sure you use the full path to your certificate file. If your .pem is fabrikam.pem you can use \__DIR\__ . 'fabrikam.pem'
 - Build the package
 	+ If you have never built a Windows Azure PHP package before see this article: http://azurephp.interoperabilitybridges.com/articles/deploying-your-first-php-application-with-the-windows-azure-command-line-tools-for-php
 - Edit the ServiceConfiguration.cscfg file the commandline tool created (Will be located in the output folder from the tool) with your WindowsAzureStorageConnectionString value
