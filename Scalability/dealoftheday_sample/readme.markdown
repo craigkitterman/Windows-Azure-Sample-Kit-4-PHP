@@ -47,6 +47,7 @@ You can see DotD in action (and maybe win a cool prize!) at http://dealoftheday.
 	+ You build the package with the Windows Azure Command Line tools for PHP. Be sure you change the following variables to reflect your project
 		* %PROJ% - Location of your project. E.G. C:\Projects\fabrikam
 		* %PROJNAME% - The name of your project. E.G. FabrikamCustomerPortal
+	+ Open a Windows Azure SDK Command Prompt and change to the directory of your Windows Azure Command Line tools for PHP
 	+ The following command was used to build this package during development
 		* php.exe package.php  --source="%PROJ%\Web" --project="%PROJNAME%" -f --target="%PROJ%\deploy" --worker-role-startup-script="worker.php" --worker-role="%PROJ%\Worker"
 - Edit the ServiceConfiguration.cscfg file the commandline tool created (Will be located in the output folder from the tool) with your WindowsAzureStorageConnectionString value
