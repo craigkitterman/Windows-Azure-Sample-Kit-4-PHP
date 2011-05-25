@@ -37,7 +37,7 @@ You can see DotD in action (and maybe win a cool prize!) at http://dealoftheday.
 		* Click "Storage Accounts" in the left pane
 		* ************************************* Portal not loading. fill in these steps later ************************************
 	+ AZURE_STORAGE_KEY corresponds to your storage Primary Access Key
-	+ AZURE_SERVICE corresponds to your custom storage endpoing (fabrikam from the example above)
+	+ AZURE_SERVICE corresponds to your custom storage endpoint (fabrikam from the example above)
 	+ AZURE_ROLE_END corresponds to the custom URL of your hosted service. You may not have a hosted service yet. It is ok to leave this field blank
 	+ SUB_ID corresponds to the subscription id you found while creating your certificate files
 	+ CERT_KEY corresponds to the certificate key (thumbprint) you found while creating your certificate files
