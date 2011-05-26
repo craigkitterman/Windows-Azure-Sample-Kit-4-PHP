@@ -1,0 +1,474 @@
+html,
+body{
+	background-image: url(http://az28935.vo.msecnd.net/assets/bg_site.jpg);
+	background-repeat:repeat-x;
+	background-position:top;
+	margin:0;
+	padding:0px;
+	background-color:#fff;/**/
+    height:100%;
+    width:100%;
+}
+div.content_wrapper {
+	background: url(http://az28935.vo.msecnd.net/assets/bg_clouds.png) no-repeat;
+	background-repeat:no-repeat;
+	background-position:top left;
+	position:relative;
+	width:1000px;
+	margin:0;
+	padding:0;
+	margin-left:auto;
+	margin-right:auto;
+	width:913px;
+}
+a:active,
+a:link,
+div a {
+	text-decoration:none;
+	color:#0ba1b8;
+}
+p,ul li, ol li, div { 
+	color:#808080; 
+	padding-top:0px; 
+	margin-top:0px; 
+	font-family:verdana;
+	font-size:8pt;
+	line-height:18px;
+}
+.top_spacer {
+	height:30px;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.banner_area {
+	margin-left:70px;
+	margin-right:70px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+.banner_text {
+	height:81px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/text_topBanner.png);
+	background-repeat:no-repeat;
+	margin-left:10px;
+}
+/*************************** floating images *****************************/
+.wheels {
+	position:absolute;
+	top:50px;
+	right:20px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/icon_cloud.png);
+	height:114px;
+	width:174px;
+	z-index:15;
+}
+.MS_icon {
+	position:absolute;
+	top:50px;
+	right:-50px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/icon_MS.png);
+	height:13px;
+	width:81px;
+}
+.Azure_icon {
+	position:absolute;
+	top:5px;
+	right:-50px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/icon_winAzure.png);
+	height:30px;
+	width:161px;
+}
+.arrow1 {
+	position:absolute;
+	top:20px;
+	right:180px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/fh_arrowLine.png);
+	height:71px;
+	width:46px;
+}
+.PHP_icon {
+	position:absolute;
+	top:25px;
+	right:120px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/icon_php.png);
+	height:34px;
+	width:65px;
+}
+.Powered_text {
+	position:absolute;
+	top:-5px;
+	right:150px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/text_poweredBy.png);
+	height:26px;
+	width:96px;
+}
+.text_something {
+	position:absolute;
+	top:10px;
+	left:-8px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/text_something.png);
+	height:46px;
+	width:216px;
+}
+.text_azure {
+	position:absolute;
+	top:10px;
+	right:45px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/text_azure.png);
+	height:58px;
+	width:150px;
+}
+.arrow2 {
+	position:absolute;
+	top:25px;
+	right:-22px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/fh_arrowHollow.png);
+	height:86px;
+	width:66px;
+}
+.text_know {
+	position:absolute;
+	top:-35px;
+	left:110px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/text_know.png);
+	height:54px;
+	width:252px;
+}
+.arrow3 {
+	position:absolute;
+	top:1px;
+	left:80px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/fh_arrowDownL.png);
+	height:27px;
+	width:19px;
+	z-index:10;
+}
+.arrow4 {
+	position:absolute;
+	top:18px;
+	left:288px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/fh_arrowDownR.png);
+	height:28px;
+	width:26px;
+}
+.text_hood {
+	position:absolute;
+	top:70px;
+	left:60px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/text_hood.png);
+	height:56px;
+	width:333px;
+}
+.architect_title {
+	background-image: url(http://az28935.vo.msecnd.net/assets/text_architecture.png);
+	height:32px;
+	width:169px;
+	margin:45px 0 20px 0;
+}
+.arrow5 {
+	position:absolute;
+	top:120px;
+	left:40px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/fh_arrowSolid.png);
+	height:70px;
+	width:47px;
+}
+.peep {
+	position:absolute;
+	top:55px;
+	left:-52px;
+	background-image: url(http://az28935.vo.msecnd.net/assets/peeping_tom.png);
+	height:274px;
+	width:104px;
+}
+/****************** end floating images *********************/
+a.link_text {
+	text-decoration:none;
+	color:#0d7ba2;
+}
+.link_game {
+	height:23px;
+	padding-top:8px;
+	margin-left:10px;
+}
+.section_wrapper,
+.section_middle,
+.section2_wrapper {	
+	float:left;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	padding-top:20px;
+	z-index:10;
+	position:relative;
+}
+.section_wrapper {
+	background-image: url(http://az28935.vo.msecnd.net/assets/bg_topSection.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	width:913px;
+}
+.section_middle {
+	padding:0;
+	margin:0;
+	height:30px;
+	width:900px;
+	z-index:10;
+}
+.section_center {
+	position:relative;
+}
+.section2_wrapper {
+	background-image:url(http://az28935.vo.msecnd.net/assets/bg_paper2.jpg);
+	background-repeat:no-repeat;
+	width:907px;
+	height:734px;
+	z-index:5;
+}
+.wide_section {
+	position:relative;
+	height:381px;
+	width:854px;
+	background-color:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	margin-bottom:49px;
+}
+.wide_none {
+	background-image:url(http://az28935.vo.msecnd.net/assets/bg_notInSession.jpg);
+}
+.text_loser {
+	position:absolute;
+	top:220px;
+	left:320px;
+}
+.text_winner_wrapper {
+	position:absolute;
+	top:230px;
+	left:250px;
+}
+p.text-winner {
+	position:relative;
+	text-align:center;
+	margin-left:20px;
+}
+.text_winner_no {
+	text-align:center;
+	font-family:verdana;
+	color:#282560;
+	font-size:14pt;
+}
+.text_none {
+	padding-top:260px;
+	text-align:center;
+}
+.giveaway_wrapper {
+	float:left;
+}
+.giveaway_image{
+	background:#fff;
+	height:405px;
+	width:440px;
+	clear:both;
+	text-align:center;
+	margin-left:25px;
+}
+.game_link {
+	margin-top:5px;
+}
+.right_column,
+.right_column2 {
+	float:right;
+	width:430px;
+	z-index:12;
+}
+.right_column2 {
+	position:absolute;
+	top:60px;
+	width:480px;
+	right:70px;
+}
+.left_column,
+.left_column2 {
+	float:left;
+	width:430px;
+	margin: 50px 0 0 0;
+}
+.left_column2 {
+	width:800px;
+	margin-left:100px;
+}
+.userInput2 {
+	width:250px;
+	margin-top:85px;
+}
+.play_form {
+	position:relative;
+	height:200px;
+}
+.play_image {
+	position:absolute;
+	right:250px;
+	margin-top:15px;
+	height:170px;
+	width:200px;
+	/*height:128px;
+	width:150px;*/
+	z-index:20;
+}
+.capcha_image {	
+	position:absolute;
+	right:15px;
+	margin-top:40px;
+	height:84px;
+	height:125px;
+	width:189px;
+	width:230px;
+	z-index:20;
+	border:1px #ccc solid;
+}
+.capcha_button_wrapper {
+	height:51px;
+	width:27px;
+	position:absolute;
+	top:48px;
+	right:10px;
+}
+.capcha_refresh {
+	background-image: url(http://az28935.vo.msecnd.net/assets/capcha_refresh.jpg);
+	background-repeat:no-repeat;		
+	height:18px;
+	width:27px;
+}
+.capcha_audio {
+	background-image: url(http://az28935.vo.msecnd.net/assets/capcha_audio.jpg);
+	background-repeat:no-repeat;		
+	height:16px;
+	width:27px;
+}
+.capcha_help {
+	background-image: url(http://az28935.vo.msecnd.net/assets/capcha_help.jpg);
+	background-repeat:no-repeat;		
+	height:17px;
+	width:27px;
+}
+.capcha_text {
+	font-size:7pt;
+	padding:8px 0 0 7px;
+	clear:both;
+}
+#recaptcha_image img {
+	width:210px !important;
+}
+.comments_list_wrapper {
+	float:left;
+	width:400px;
+	margin:0px;
+	margin-top:65px;
+	margin-left:0px;
+}
+.image_diagram {
+	background-image: url(http://az28935.vo.msecnd.net/assets/fh_diagram.png);
+	background-repeat:no-repeat;	
+	width:326px;
+	height:180px;	
+	margin:100px 0 0 150px;
+}
+.image_diagram2 {
+	background-image: url(http://az28935.vo.msecnd.net/assets/fh_diagram2.png);
+	background-repeat:no-repeat;	
+	width:526px;
+	height:385px;	
+}
+.comments_list {
+	width:400px;
+	height:160px;
+	margin-top:5px;
+	overflow:auto;
+	padding:5px;
+	border:1px #ccc solid;
+}
+.comment_form,
+.form_bg {
+	background-color:#f8f8f8;
+}
+.input_button,
+.input_label,
+.input_name,
+.input_email {
+	float:left;
+	padding:0 5px 0 5px;	
+	font-size:7pt;
+}
+.comment_label {
+	clear:both;
+	margin-top:5px;
+}
+.input_header {
+	padding:3px;
+	padding-left:5px;
+	color:#000;
+	font-size:7pt;
+}
+.input_button {
+	float:left;
+	margin:5px;
+	color:#fff;
+	background:#999;
+	height:24px;
+	font-size:8pt;
+	padding:0 5px 0 5px;
+}
+.input_name {
+	font-size:8pt;
+	width:90px;
+}
+.input_email {
+	width:165px;
+	font-size:8pt;
+}
+.input_comments {
+	clear:both;
+	font-size:8pt;	
+	margin-left:5px;
+}
+.comment_author,
+.comment_count,
+.comment_date  {
+	float:left;
+	font-size:7pt;
+}
+.comment_count {
+	font-weight:bold;
+	width:20px;
+	text-align:right;
+}
+.comment_author {
+	font-weight:bold;
+	width:180px;
+}
+p.comment {
+	margin:0;
+	padding:0;
+	clear:both;
+}
+.userInput3 {
+	width:730px;
+}
+.userInput3 ul {
+	padding-left:14px;
+	padding-right:0px;
+}
+.link_list {
+	width:200px;
+	padding:0px;
+	margin:0px;
+}
+.link_list ul,
+.link_list li {
+	padding-top:0px;
+	margin-top:0px;
+}
