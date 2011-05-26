@@ -14,7 +14,7 @@ The application is taking advantage of the Windows Azure storage objects to keep
 	+ Set the WACMDDIR constant to the proper path for your Windows Azure Command Line Tools folder
 	+ Set the PHPRUNTIMEDIR to the folder that holds your php.exe (i.e. c:\program files\php\v5.3)
 	+ Run build.bat
-		* This will build, package, and deploy the app to the local Azure Compute Emulator.  The app is configured by default to use dev (local) storage.  If you want to use a live Azure storage account, you can change the details in the constants.php file in both the �Web� and �Worker� folders (note: they must be the same)
+		* This will build, package, and deploy the app to the local Azure Compute Emulator.  The app is configured by default to use dev (local) storage.  If you want to use a live Azure storage account, you can change the details in the constants.php file in both the "Web" and "Worker" folders (note: they must be the same)
 
 # Additional Information #
 
