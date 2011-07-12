@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceDefinition xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition" name="HelloAzure">
+    <WebRole name="WebRole" vmsize="ExtraSmall">
+        <Sites>
+          <Site name="WebRole" physicalDirectory="./WebRole">
+            <Bindings>
+              <Binding name="Endpoint1" endpointName="HttpEndpoint" />
+            </Bindings>
+          </Site>
+        </Sites>
+        <Startup>
+        <Task commandLine="install-php.cmd >> .\startup-tasks-log.txt 2>>.\startup-tasks-error-log.txt" executionContext="elevated" taskType="simple" />     
+        </Startup>
+        <InputEndpoints>
+            <InputEndpoint name="HttpEndpoint" protocol="http" port="80" />
+        </InputEndpoints>
+    </WebRole>
+</ServiceDefinition>
